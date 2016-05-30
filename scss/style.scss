@@ -225,7 +225,65 @@ textarea {
   font: inherit; /* 2 */
 }
 
+// Default Styles
+body {
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 14px;
+}
+
 // Styles on mobile level
-.container-wide {
-   min-width: 100%;
+.container-wide, .container, .container-small {
+   width: 100%;
+}
+
+.one-column-small, .two-columns-small, .three-columns-small, .four-columns-small, .five-columns-small, .six-columns-small, .seven-columns-small, .eight-columns-small, .nine-columns-small, .ten-columns-small, .eleven-columns-small, .twelve-columns-small {
+   float: left;
+}
+
+.one-column-small {
+   width: 100%;
+}
+
+.two-columns-small {
+   width: 50%;
+}
+
+.three-columns-small {
+   width: 33.333333%;
+}
+
+.four-columns-small {
+   width: 25%;
+}
+
+.five-columns-small {
+   width: 20%;
+}
+
+.six-columns-small {
+   width: 16.66666667%;
+}
+
+.seven-columns-small {
+   width: 14.2857;
+}
+
+.eight-columns-small {
+   width: 12.5%;
+}
+
+.nine-columns-small {
+   width: 11.1111111%;
+}
+
+.ten-columns-small {
+   width: 10%;
+}
+
+.eleven-columns-small {
+   width: 9.0909%;
+}
+
+.twelve-columns-small {
+   width: 8.33333%;
 }
