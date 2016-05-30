@@ -298,6 +298,14 @@ h1, h2, h3, h4, h5, h6 {
 
 // Tablet Styles (Medium)
 @media (min-width: 768px) {
+   .container-small {
+      width: 500px;
+   }
+
+   .container {
+      width: 750px;
+   }
+
    .two-columns-medium {
       width: 50%;
    }
@@ -343,7 +351,16 @@ h1, h2, h3, h4, h5, h6 {
    }
 }
 
+// Large screens
 @media (min-width: 992px) {
+   .container-small {
+      width: 750px;
+   }
+
+   .container {
+      width: 970px;
+   }
+
    .two-columns-large {
       width: 50%;
    }
@@ -389,7 +406,16 @@ h1, h2, h3, h4, h5, h6 {
    }
 }
 
+// Extra large screen
 @media (min-width: 1200px) {
+   .container-small {
+      width: 970px;
+   }
+
+   .container {
+      width: 1150px;
+   }
+
    .two-columns-extra-large {
       width: 50%;
    }
