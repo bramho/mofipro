@@ -1,1 +1,16 @@
+.one-column-small, .two-columns-small, .three-columns-small, .four-columns-small, .five-columns-small, .six-columns-small, .seven-columns-small, .eight-columns-small, .nine-columns-small, .ten-columns-small, .eleven-columns-small, .twelve-columns-small {
+   text-align: center;
+   margin-bottom: 10px;
+   color: #fff;
+}
 
+.column-margin {
+   margin: 0px 10px;
+   padding: 20px 0px;
+   background-color: red;
+   text-align: center;
+}
+
+h1 {
+   text-align: center;
+}

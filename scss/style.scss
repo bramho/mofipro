@@ -231,6 +231,10 @@ body {
    font-size: 14px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+   font-weight: 300;
+}
+
 // Styles on mobile level
 .container-wide, .container, .container-small {
    width: 100%;
@@ -265,7 +269,7 @@ body {
 }
 
 .seven-columns-small {
-   width: 14.2857;
+   width: 14.2857%;
 }
 
 .eight-columns-small {
