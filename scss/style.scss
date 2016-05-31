@@ -225,6 +225,9 @@ textarea {
   font: inherit; /* 2 */
 }
 
+// Includes
+@import 'base/mixins'; // Mixins
+
 // Default Styles
 body {
    font-family: Verdana, Geneva, sans-serif;
@@ -235,9 +238,20 @@ h1, h2, h3, h4, h5, h6 {
    font-weight: 300;
 }
 
+a {
+   text-decoration: none;
+   color: #000;
+   font-weight: bold;
+
+   &:hover {
+      text-decoration: underline;
+   }
+}
+
 // Mobile Styles (Small)
 .container-wide, .container, .container-small {
    width: 100%;
+   margin: 0 auto;
 }
 
 .one-column-small, .two-columns-small, .three-columns-small, .four-columns-small, .five-columns-small, .six-columns-small, .seven-columns-small, .eight-columns-small, .nine-columns-small, .ten-columns-small, .eleven-columns-small, .twelve-columns-small, .one-column-medium, .two-columns-medium, .three-columns-medium, .four-columns-medium, .five-columns-medium, .six-columns-medium, .seven-columns-medium, .eight-columns-medium, .nine-columns-medium, .ten-columns-medium, .eleven-columns-medium, .twelve-columns-medium, .one-column-large, .two-columns-large, .three-columns-large, .four-columns-large, .five-columns-large, .six-columns-large, .seven-columns-large, .eight-columns-large, .nine-columns-large, .ten-columns-large, .eleven-columns-large, .twelve-columns-large, .one-column-extra-large, .two-columns-extra-large, .three-columns-extra-large, .four-columns-extra-large, .five-columns-extra-large, .six-columns-extra-large, .seven-columns-extra-large, .eight-columns-extra-large, .nine-columns-extra-large, .ten-columns-extra-large, .eleven-columns-extra-large, .twelve-columns-extra-large {
@@ -294,6 +308,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .twelve-columns-small {
    width: 8.33333%;
+}
+
+// Text Center
+.text-center {
+   text-align: center;
 }
 
 // Tablet Styles (Medium)

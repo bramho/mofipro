@@ -10,12 +10,3 @@
    background-color: red;
    text-align: center;
 }
-
-.container-small, .container, .container-wide {
-   text-align: center;
-   margin: 0 auto;
-}
-
-h1, h2 {
-   text-align: center;
-}
