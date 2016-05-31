@@ -227,24 +227,136 @@ textarea {
 
 // Includes
 @import 'base/mixins'; // Mixins
+@import 'base/variables'; // Colors
 
 // Default Styles
 body {
-   font-family: Verdana, Geneva, sans-serif;
+   font-family: $font-family;
    font-size: 14px;
 }
 
+// Headings
 h1, h2, h3, h4, h5, h6 {
    font-weight: 300;
 }
 
+// Links
 a {
    text-decoration: none;
-   color: #000;
+   color: $link-color;
    font-weight: bold;
+   display: inline-block;
+   cursor: pointer;
+   @include animate( all, 320ms );
+
+   &:after {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 2px;
+      width: 0%;
+      background: transparent;
+      @include animate( width, 320ms );
+   }
 
    &:hover {
-      text-decoration: underline;
+      &:after {
+         width: 100%;
+         background: $link-color;
+      }
+   }
+}
+
+// Buttons
+
+button {
+   a {
+      font-weight: normal;
+      color: inherit;
+
+      &:hover {
+         &:after {
+            width: 0%;
+         }
+      }
+
+   }
+}
+
+.button {
+   padding: 10px 20px;
+   background: none;
+   border: 2px solid $button-color;
+   cursor: pointer;
+   @include animate( all, 320ms );
+
+   &:hover, &:focus {
+      background-color: $button-color;
+      color: $button-text;
+   }
+}
+
+.small-button {
+   padding: 5px 10px;
+   font-size: 12px;
+}
+
+.large-button {
+   padding: 15px 25px;
+}
+
+.reversed-button {
+   border-color: $reversed-button-color;
+   background-color: $reversed-button-background;
+   color: $reversed-button-color;
+
+   &:hover, &:focus {
+      background-color: $reversed-button-color;
+      color: $reversed-button-background;
+   }
+}
+
+.primary-button {
+   background-color: $primary-button-color;
+   border-color: $primary-button-color;
+   color: $primary-button-text;
+
+   &:hover, &:focus {
+      background-color: $primary-button-hover;
+      border-color: $primary-button-hover;
+   }
+}
+
+.warning-button {
+   background-color: $warning-button-color;
+   border-color: $warning-button-color;
+   color: $warning-button-text;
+
+   &:hover, &:focus {
+      background-color: $warning-button-hover;
+      border-color: $warning-button-hover;
+   }
+}
+
+.danger-button {
+   background-color: $danger-button-color;
+   border-color: $danger-button-color;
+   color: $danger-button-text;
+
+   &:hover, &:focus {
+      background-color: $danger-button-hover;
+      border-color: $danger-button-hover;
+   }
+}
+
+.success-button {
+   background-color: $success-button-color;
+   border-color: $success-button-color;
+   color: $success-button-text;
+
+   &:hover, &:focus {
+      background-color: $success-button-hover;
+      border-color: $success-button-hover;
    }
 }
 
