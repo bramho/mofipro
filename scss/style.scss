@@ -306,7 +306,7 @@ button {
 }
 
 .reversed-button {
-   border-color: $reversed-button-color;
+   border-color: $reversed-button-background;
    background-color: $reversed-button-background;
    color: $reversed-button-color;
 
@@ -422,9 +422,17 @@ button {
    width: 8.33333%;
 }
 
-// Text Center
+// Text Aligning
 .text-center {
    text-align: center;
+}
+
+.text-left {
+   text-align: left;
+}
+
+.text-right {
+   text-align: right;
 }
 
 // Tablet Styles (Medium)
