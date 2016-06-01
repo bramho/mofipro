@@ -452,6 +452,59 @@ button {
    }
 }
 
+// Rating Module
+.rating-module {
+
+   .rating {
+      border: none;
+      float: left;
+
+      input {
+         display: none;
+      }
+
+      .half {
+         &:before {
+            content: "\f089";
+            position: absolute;   
+         }
+      }
+
+      label {
+         cursor: pointer;
+
+         &:before {
+            content: "\f006";
+            color: $star-color;;
+            float: right;
+            font-size: 30px;
+            padding: 0px 5px;
+            font-family: FontAwesome;
+            display: inline-block;
+         }
+      }
+   }
+
+   .rating > input:checked ~ label,
+   .rating:not(:checked) > label:hover,
+   .rating:not(:checked) > label:hover ~ label {
+      &:before {
+         content: "\f005";
+         color: $star-color;
+      }
+   }
+
+   .rating > input:checked + label:hover,
+   .rating > input:checked ~ label:hover,
+   .rating > label:hover ~ input:checked ~ label,
+   .rating > input:checked ~ label:hover ~ label {
+      &:before {
+         color: $secondary-star-color;
+      }
+   }
+
+}
+
 // Mobile Styles (Small)
 .container-wide, .container, .container-small {
    width: 100%;
