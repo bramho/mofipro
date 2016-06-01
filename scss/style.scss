@@ -233,6 +233,7 @@ textarea {
 body {
    font-family: $font-family;
    font-size: 14px;
+   color: $text-color;
 }
 
 // Headings
@@ -268,11 +269,11 @@ a {
 }
 
 // Buttons
-
 button {
    a {
       font-weight: normal;
       color: inherit;
+      @include animate( none, 0ms );
 
       &:hover {
          &:after {
@@ -323,7 +324,7 @@ button {
 
    &:hover, &:focus {
       background-color: $primary-button-hover;
-      border-color: $primary-button-hover;
+      color: $primary-button-color;
    }
 }
 
@@ -334,7 +335,7 @@ button {
 
    &:hover, &:focus {
       background-color: $warning-button-hover;
-      border-color: $warning-button-hover;
+      color: $warning-button-color;
    }
 }
 
@@ -345,7 +346,7 @@ button {
 
    &:hover, &:focus {
       background-color: $danger-button-hover;
-      border-color: $danger-button-hover;
+      color: $danger-button-color;
    }
 }
 
@@ -356,7 +357,7 @@ button {
 
    &:hover, &:focus {
       background-color: $success-button-hover;
-      border-color: $success-button-hover;
+      color: $success-button-color;
    }
 }
 
@@ -364,6 +365,15 @@ button {
 .container-wide, .container, .container-small {
    width: 100%;
    margin: 0 auto;
+}
+
+.row {
+   &:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+   }
 }
 
 .one-column-small, .two-columns-small, .three-columns-small, .four-columns-small, .five-columns-small, .six-columns-small, .seven-columns-small, .eight-columns-small, .nine-columns-small, .ten-columns-small, .eleven-columns-small, .twelve-columns-small, .one-column-medium, .two-columns-medium, .three-columns-medium, .four-columns-medium, .five-columns-medium, .six-columns-medium, .seven-columns-medium, .eight-columns-medium, .nine-columns-medium, .ten-columns-medium, .eleven-columns-medium, .twelve-columns-medium, .one-column-large, .two-columns-large, .three-columns-large, .four-columns-large, .five-columns-large, .six-columns-large, .seven-columns-large, .eight-columns-large, .nine-columns-large, .ten-columns-large, .eleven-columns-large, .twelve-columns-large, .one-column-extra-large, .two-columns-extra-large, .three-columns-extra-large, .four-columns-extra-large, .five-columns-extra-large, .six-columns-extra-large, .seven-columns-extra-large, .eight-columns-extra-large, .nine-columns-extra-large, .ten-columns-extra-large, .eleven-columns-extra-large, .twelve-columns-extra-large {
