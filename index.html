@@ -236,13 +236,19 @@
 
             <div class="rating-module">
 
-               <fieldset class="rating">
-                   <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
-                   <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
-                   <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
-                   <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
-                   <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+               <fieldset class="rating" id="rating-stars1">
+                   <input type="radio" class="rating-stars" id="star5" name="rating" value="5" data-star="5" /><label for="star5"></label>
+                   <input type="radio" class="rating-stars" id="star4" name="rating" value="4" data-star="4" /><label for="star4"></label>
+                   <input type="radio" class="rating-stars" id="star3" name="rating" value="3" data-star="3" /><label for="star3"></label>
+                   <input type="radio" class="rating-stars" id="star2" name="rating" value="2" data-star="2" /><label for="star2"></label>
+                   <input type="radio" class="rating-stars" id="star1" name="rating" value="1" data-star="1" /><label for="star1"></label>
                </fieldset>
+
+               <button class="button" id="submit-rating">Rate</button>
+
+               <div class="rating-output" id="rating-output">
+
+               </div>
 
             </div>
 
@@ -1958,6 +1964,9 @@
       </div><!-- .row -->
 
    </div><!-- .container-wide -->
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="js/mofipro.js"></script>
 
 </body>
 </html>
