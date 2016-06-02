@@ -27,11 +27,8 @@ $(document).ready(function() {
             average = average.toFixed(1);
          }
 
-         $('.rating-output').html(average);
+         $('.rating-number').html(average);
       }
 
    });
-
-
-
 });
