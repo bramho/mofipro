@@ -299,6 +299,7 @@ button {
 .button {
    padding: 10px 20px;
    background: none;
+   text-transform: uppercase;
    border: 2px solid $button-color;
    cursor: pointer;
    @include animate( all, 320ms );
@@ -571,7 +572,7 @@ button {
 
 .one-column-medium, .two-columns-medium, .three-columns-medium, .four-columns-medium, .five-columns-medium, .six-columns-medium, .seven-columns-medium, .eight-columns-medium, .nine-columns-medium, .ten-columns-medium, .eleven-columns-medium, .twelve-columns-medium, .one-column-large, .two-columns-large, .three-columns-large, .four-columns-large, .five-columns-large, .six-columns-large, .seven-columns-large, .eight-columns-large, .nine-columns-large, .ten-columns-large, .eleven-columns-large, .twelve-columns-large, .one-column-extra-large, .two-columns-extra-large, .three-columns-extra-large, .four-columns-extra-large, .five-columns-extra-large, .six-columns-extra-large, .seven-columns-extra-large, .eight-columns-extra-large, .nine-columns-extra-large, .ten-columns-extra-large, .eleven-columns-extra-large, .twelve-columns-extra-large {
    width: 100%;
-   margin: 10px 0px;
+   // margin: 10px 0px;
 }
 
 .one-column-small {
